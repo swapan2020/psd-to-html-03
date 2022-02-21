@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato&family=Nunito&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 500;
+}
+p,a,span{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    max-width:1170px;
+    margin:0 auto;
+}
+:root{
+    --primary:#e8565e;
+    --secondary:#3d3d3d;
+    --dark:#333333;
+    --ternary:#eee6cc;
+    --white:#ffffff;
+}
+section{
+    padding:60px 0;
+}
+.section-header .title{
+    font-size:125px;
+    color:var(--primary);
+    text-align: center;
+}
+.section-header .description{
+    width: 55%;
+    margin:auto;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom:50px;
+    text-align:center;
+    color: var(--secondary);
+}
+.btn{
+    font-size:18px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:10px 46px;
+    background:var(--white);
+    color:var(--primary);
+    border:2px solid var(--white);
+    border-radius:24px;
+    margin-top: 20px;
+    transition:all .3s ease;
+}
+.btn:hover{
+    color:var(--white);
+    background:none;
+}
+/* Header Section Css */
+.header {
+    padding: 40px 0;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 999;
+    transition: all .3s ease;
+}
+.header .logo {
+    display: block;
+    text-align: center;
+}
+.header.sticky{
+    padding: 15px 0;
+    background:#e8565e;
+}
+.header.sticky .mobile-menu{
+    top:30px;
+}
+.header .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    color: var(--white);
+    font-size: 30px;
+    cursor: pointer;
+    transition:all .3s ease;
+}
+.header .menu{
+    text-align:center;
+}
+.header .menu li{
+    display:inline-block;
+}
+.header .menu li a {
+    color: var(--white);
+    font-size: 18px;
+    display: block;
+    margin: 10px 10px 0;
+}
+.header .menu.active {
+    /* top: 0; */
+    left: 0;
+}
+/* banner section css */
+.banner {
+    position:relative;
+    background:linear-gradient(rgba(232,86,94,.80),rgba(232,86,94,.80)),url(images/home.png) no-repeat center;
+    height:100vh;
+    min-height: 500px;
+}
+.banner .banner-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner .banner-content h2 {
+    font-size: 200px;
+    margin-bottom: -25px;
+    color: var(--white);
+}
+.banner .banner-content p{
+    font-size:18px;
+    color:var(--white);
+    line-height: 26px;
+}
+/* Food Items Css */
+.food-items .item-box ,
+.statastic-box ,
+.food-content-box ,
+.delicious ,
+.package-menu-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+.food-items .item-box .single-item {
+    width:calc(33% - 30px);
+    text-align:center;
+}
+.food-items .item-box .single-item img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+}
+.food-items .item-box .single-item h3{
+    font-size:66px;
+    margin-bottom:10px;
+    color:var(--primary);
+}
+.food-items .item-box .single-item p{
+    font-size:22px;
+    color:var(--dark);
+
+}
+
+/* statastic section scc */
+
+.statastic{
+    background:linear-gradient(rgba(232,86,94,.80),rgba(232,86,94,.80)),url(images/food5.png) no-repeat center;
+    background-size:cover;
+    color:var(--white);
+}
+.statastic .title{
+    margin-bottom: -35px;
+    color:var(--white);
+}
+.statastic .description{
+    color:var(--white);
+}
+.statastic-box .statastic-item{
+    position:relative;
+    width:320px;
+    height:320px;
+    text-align: center;
+    border-radius:50%;
+    border:4px dashed var(--white);
+}
+.statastic-box .statastic-item .statastic-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.statastic-box .statastic-item h2{
+    font-size:66px;
+    font-family: 'Lato', sans-serif;
+}
+.statastic-box .statastic-item span{
+    font-size:40px;
+    font-family: 'Lato', sans-serif;
+}
+/* Food menu section css */
+.food-menu{
+    background:var(--ternary);
+}
+.food-menu .food-content-box .food-content{
+    width:calc(50% - 50px);
+}
+.food-menu .food-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.food-menu .food-content img {
+    width: 18%;
+    display: inline-block;
+    margin-right: 30px;
+}
+.food-menu .food-content h3{
+    font-size:50px;
+    color:var(--primary);
+
+}
+.food-menu .food-content p{
+    font-size:22px;
+    color:var(--secondary);
+    font-weight:500;
+}
+/* delicious section css */
+.delicious{
+    padding:0;
+}
+.delicious .overlay{
+    width:100%;
+    background:linear-gradient(rgba(232,86,94,.80),rgba(232,86,94,.80)),url(images/food4.png) no-repeat center;
+    background-size:cover;
+    min-height: 900px;
+}
+.delicious .content{
+    width:50%;
+}
+.delicious .right-content{
+    padding: 0 80px;
+}
+.delicious .right-content h2{
+    font-size:100px;
+    color:var(--primary);
+}
+.delicious .right-content p{
+    font-size:23px;
+    color:var(--secondary);
+}
+.delicious .right-content .btn{
+    background:var(--primary);
+    color:var(--white);
+    padding: 14px 60px;
+    border-radius:30px;
+}
+.delicious .right-content .btn:hover{
+    background:none;
+    color:var(--primary);
+    border-color:var(--primary);
+}
+/* package section css */
+.package{
+    background:var(--ternary);
+}
+.package-menu-box .package-item{
+    width:calc(33% - 30px);
+    background:var(--white);
+    padding:50px 30px 30px;
+    border-radius:8px;
+    text-align:center;
+}
+.package-menu-box .package-item h3{
+    font-size:50px;
+    color:var(--primary);
+}
+.package-menu-box .package-item p{
+    font-size:22px;
+    color:var(--dark);
+}
+.package-menu-box .package-item .btn{
+    background:var(--primary);
+    color:var(--white);
+    padding: 15px 100px;
+    border-radius: 40px;
+}
+.package-menu-box .package-item .btn:hover{
+    background:none;
+    color:var(--primary);
+    border-color:var(--primary);
+}
+/* testimonial section css */
+.testimonial {
+    background: linear-gradient(rgb(255 255 255 / 100%),rgb(255 255 255 / 60%)),url(images/testimonial-bg.png) no-repeat center;
+    background-size: cover;
+    text-align:center;
+}
+.testimonial .contianer{
+    padding:120px 0;
+}
+.testimonial img{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+.testimonial p {
+    width: 75%;
+    font-size: 40px;
+    color: var(--secondary);
+    line-height: 54px;
+    margin: 0 auto 35px;
+}
+.testimonial h2{
+    font-size:86px;
+    color:var(--primary);
+}
+/* subscribe section css */
+.subscribe{
+    background:var(--ternary);
+}
+.subscribe .sub-content{
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.subscribe .sub-content input{
+    padding:15px;
+    border:none;
+    outline:none;
+
+}
+.subscribe .sub-content input[type="email"]{
+    width:60%;
+    font-size:20px;
+    color:#111;
+    background:var(--white);
+    border-radius:30px;
+    padding-left:35px;
+}
+.subscribe .sub-content input[type="email"]::placeholder{
+    color:#909090;
+}
+.subscribe .sub-content input[type="submit"]{
+    width:40%;
+    background:var(--primary);
+    color: var(--white);
+    border-radius:30px;
+    font-size:20px;
+    text-transform: uppercase;
+    margin-left: -45px;
+}
+/* footer section area css */
+.footer{
+    padding:80px 0;
+    background:var(--dark);
+    color:var(--white);
+}
+.footer .footer-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.footer .footer-wrapper .footer-content{
+   width:calc(25% - 50px);
+}
+.footer .footer-wrapper .footer-content:first-child{
+    width:40%;
+}
+.footer .footer-wrapper .footer-content .title-one{
+   font-size:54px;
+}
+.footer .footer-wrapper .footer-content p{
+    width:70%;
+    font-size:20px;
+}
+.footer .footer-wrapper .footer-content .title-two{
+   font-size:38px;
+   margin-bottom: 10px;
+}
+.footer .footer-wrapper .footer-content ul li a{
+    display: inline-block;
+    color:var(--white);
+    font-size:20px;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom:10px;
+}
+.footer .footer-wrapper .footer-content i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--dark);
+    margin-right: 10px;
+    font-size: 16px;
+}

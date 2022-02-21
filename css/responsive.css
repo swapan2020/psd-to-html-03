@@ -1,0 +1,213 @@
+@media only screen and (max-width:1200px){
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .delicious .right-content h2 {
+        line-height: 100px;
+    }
+    .delicious .right-content {
+        padding: 0 15px;
+    }
+    .package-menu-box {
+        justify-content: center;
+    }
+    .package-menu-box .package-item {
+        width: 40%;
+        margin: 20px;
+    }
+}
+@media only screen and (max-width:992px){
+    .banner .banner-content h2 {
+        font-size: 160px;
+        margin-bottom: -40px;
+    }
+    html,body{
+        width:100%;
+        overflow-x:hidden;
+        height:auto;
+    }
+    .food-items .item-box {
+        justify-content: center;
+    }
+    .food-items .item-box .single-item {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+.statastic-box {
+        justify-content: center;
+    }
+    .statastic-box .statastic-item {
+        margin: 25px 25px;
+    }
+    .food-menu .food-content-box .food-content {
+        width: calc(56% - 60px);
+    }
+    .package-menu-box .package-item {
+        width: 50%;
+        margin: 20px;
+    }
+    .footer .footer-wrapper {
+        flex-wrap: wrap;
+    }
+    .footer .footer-wrapper .footer-content {
+        width: calc(50% - 0px);
+    }
+    .footer .footer-wrapper .footer-content:first-child {
+        width: 100%;
+    }
+
+}
+/* @media only screen and (max-width:850px){
+
+} */
+@media only screen and (max-width:768px){
+    .header .logo {
+        text-align: left;
+    }
+    .mible-menu i.active.before{
+        content:"\f00d";
+    }
+    .header .menu {
+        display: block;
+        position: fixed;
+        padding-top: 60px;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #111;
+        transition:all .3s ease;
+    }
+    .header .menu li{
+        display: block;
+    }
+    .header .menu li a{
+        font-size:35px;
+        margin-bottom: 25px;
+    }
+    .header .mobile-menu {
+        display: block;
+    }
+    .food-items .item-box .single-item {
+        width: 100%;
+    }
+    .food-menu .food-content-box .food-content {
+        width: 100%;
+    }
+    .delicious .content {
+        width: 100%;
+    }.delicious .overlay {
+        min-height: 350px;
+    }
+    .delicious .right-content {
+        margin: 30px 0;
+    }
+    .package-menu-box .package-item {
+        width: 100%;
+    }
+    .testimonial img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .testimonial p {
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .section-header .description {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+    .subscribe .sub-content {
+        width: 85%;
+    }
+    .footer .footer-wrapper .footer-content {
+        width:100%;
+    }
+    .footer .footer-wrapper .footer-content:first-child {
+        width: 100%;
+    }
+    .footer .footer-wrapper .footer-content p {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:576px){
+    .banner .banner-content h2 {
+        font-size: 120px;
+        margin-bottom: -20px;
+    }
+    .subscribe .sub-content {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .subscribe .sub-content input[type="email"] {
+        width: 80%;
+        margin: 0px auto 20px;
+    }
+    .subscribe .sub-content input[type="submit"] {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .section-header .title {
+        font-size: 100px;
+    }
+}
+@media only screen and (max-width:480px){
+    .banner .banner-content h2 {
+        font-size: 90px;
+    }
+    .food-items .item-box .single-item h3 {
+        font-size: 55px;
+    }
+    .statastic .title {
+        margin-bottom: 0;
+    }
+    .statastic-box .statastic-item {
+        margin: 25px 0;
+    }
+    .statastic-box .statastic-item {
+        width: 250px;
+        height: 250px;
+    }
+    .statastic-box .statastic-item h2 {
+        font-size: 56px;
+    }
+    .statastic-box .statastic-item span {
+        font-size: 30px;
+    }
+    .food-menu .food-content h3 {
+        font-size: 45px;
+    }
+    .food-menu .food-content p {
+        font-size: 18px;
+    }
+    .package-menu-box .package-item .btn {
+        padding: 10px 65px;
+    }
+    .testimonial img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    .testimonial p {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .testimonial h2 {
+        font-size: 60px;
+    }
+    .subscribe .sub-content input[type="email"] {
+        width: 100%;
+        font-size: 17px;
+    }
+    .subscribe .sub-content input[type="submit"] {
+        width: 70%;
+        font-size: 17px;
+    }
+    .section-header .title {
+        font-size: 80px;
+    }
+}
